@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pig Pig</title>
+    <link rel="shortcut icon" href="https://img.icons8.com/metro/26/000000/pig.png" type="image/x-icon">
+    <!-- ================= Favicon ================== -->
+    <!-- Standard -->
+   
+<style>
+
+@import url('https://fonts.googleapis.com/css?family=Just+Another+Hand');
+body{
+margin:0px;
+padding:0px;
+background:#fff url("/static/pigpig/img/backg1.png") center center fixed no-repeat;//設定背景圖片的呈現方式
+background-size: cover;　//設定背景圖片的填滿方式
+font-size: 30px;
+} 
+input{border:0;
+  background-color:#FFB7DD;
+  color:#fff;
+  border-radius:10px;
+  cursor:pointer;
+font-family:'Just Another Hand', cursive;
+font-size: 30px;
+ position:fixed; 
+    left: 45%;
+    top:75%;
+
+
+}
+
+
+input:hover{
+  color:#FFB7DD;
+  background-color:#fff;
+  border:2px #FFB7DD solid;
+font-family:'Just Another Hand', cursive;
+ font-size: 30px;
+}
+
+</style>
+</head>
+
+<body class="homepage">
+     <div id="banner">
+        <div class="container">
+            <section>
+                <div style="top:450px;left:570px;position:absolute;">
+                    <a href="{% url 'pigpig:indexCut' %}" class="button alt">
+                        <div class="box">
+                            <input type="button" value="Enter" name="Enter" style="width:150px;height:50px;"><!-- style="width:150px;height:50px;" -->
+                        </div>
+                    </a>
+                </div>
+            </section>   
+        </div>
+    </div> 
+</body>
+
+</html>
